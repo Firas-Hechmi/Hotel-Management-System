@@ -1,0 +1,23 @@
+.modalTable{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.modalTable td, .modalTable th{
+   padding: 4px;
+   border: 1px solid #c3aeae;
+}
+.success-msg , .error-msg{
+    color: white;
+    padding: 4px;
+    padding-left: 10px;
+    font-size: 12px;
+  
+    border-radius: 5px;
+}
+.success-msg{
+   background-color: #2e7d32;
+}
+.error-msg{
+    margin-top: 4px;
+    background-color: #c62828; 
+}

@@ -1,0 +1,58 @@
+<mat-sidenav-container autosize>
+  <mat-sidenav #sidenav mode="side" opened="true">
+
+    <mat-nav-list>
+       <mat-list-item (click)="isExpanded =!isExpanded">
+          <mat-icon mat-list-icon class="chevron_button" [ngClass]="{rotated:isExpanded}">
+            chevron_right
+          </mat-icon>
+       </mat-list-item>
+
+       <mat-list-item [routerLink]="'room-management'">
+           <mat-icon>hotel</mat-icon>
+           <span *ngIf="isExpanded" class="menu-item">Room Management</span>
+       </mat-list-item>
+
+       <mat-list-item [routerLink]="'reservation'" >
+        <mat-icon>calendar_today</mat-icon>
+        <span *ngIf="isExpanded" class="menu-item">Reservation</span>   
+       </mat-list-item>
+       
+       <mat-list-item [routerLink]="'staff-management'" >
+        <mat-icon>people</mat-icon>
+        <span *ngIf="isExpanded" class="menu-item">Staff Management</span>   
+       </mat-list-item>
+       <mat-list-item [routerLink]="'add-employee'" >
+        <mat-icon>person_add</mat-icon>
+        <span *ngIf="isExpanded" class="menu-item">Add Employee</span>   
+       </mat-list-item>
+       <mat-list-item [routerLink]="'complain'">
+        <mat-icon>mail_outline</mat-icon>
+        <span *ngIf="isExpanded" class="menu-item">Complain</span>   
+       </mat-list-item>
+
+    </mat-nav-list>
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <app-header></app-header>
+      <mat-toolbar  style="height:30px;background-color: #5e769c;color: white;">
+      
+          
+          <button mat-icon-button aria-label="Example icon-button with menu icon">
+            <mat-icon style="font-size: 19px;">menu</mat-icon>
+          </button>
+          <span style="font-size: 16px;">{{subToolBarTitle}}</span>
+         
+
+      </mat-toolbar>
+    
+      <div id="container">
+        <router-outlet></router-outlet>
+      </div>
+      
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

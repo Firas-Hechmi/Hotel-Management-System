@@ -1,0 +1,53 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+ <!--<p class="success-msg">Room successfully booked</p>--->
+  <table class="modalTable">
+    <tr>
+      <th>Name</th>
+      <th>Detail</th>
+    </tr>
+    <tr>
+      <td>Customer Name</td>
+      <td>gjzlkguzktzlhlkuy</td>
+    </tr>
+    <tr>
+      <td>Room Type</td>
+      <td>aa</td>
+    </tr>
+    <tr>
+      <td>Room No</td>
+      <td>aa</td>
+    </tr>
+    <tr>
+      <td>Check In</td>
+      <td>aa</td>
+    </tr>
+    <tr>
+      <td>Check Out</td>
+      <td>aa</td>
+    </tr>
+    <tr>
+      <td>Total Amount</td>
+      <td>aa</td>
+    </tr>
+    <tr *ngIf="type==='room-booking'">
+      <td>Payment Status</td>
+      <td>Not Done</td>
+    </tr>
+  </table>
+  <!--<p class="error-msg">Test error !!</p>-->
+  <mat-form-field appearance="fill" *ngIf="type==='check-in'">
+    <mat-label>Advance Payment</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill" *ngIf="type==='check-out'">
+    <mat-label>Remaining Payment</mat-label>
+    <input matInput>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions style="float: right;">
+  <button mat-flat-button mat-dialog-close color="primary" *ngIf="type==='check-in'">Payment and Check In</button>
+  <button mat-flat-button mat-dialog-close color="primary" *ngIf="type==='check-out'">Payment and Check Out</button>
+  <button mat-flat-button mat-dialog-close color="accent" *ngIf="type==='room-booking'">Ok</button>
+  
+</div>

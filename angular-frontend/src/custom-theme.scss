@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$hotel-management-system-primary: mat.define-palette(mat.$blue-palette,900);
+$hotel-management-system-accent: mat.define-palette(mat.$green-palette,800);
+
+$hotel-management-system-warn: mat.define-palette(mat.$red-palette,800);
+
+$hotel-management-system-theme: mat.define-light-theme((
+  color: (
+    primary: $hotel-management-system-primary,
+    accent: $hotel-management-system-accent,
+    warn: $hotel-management-system-warn,
+  )
+));
+
+@include mat.all-component-themes($hotel-management-system-theme);
+

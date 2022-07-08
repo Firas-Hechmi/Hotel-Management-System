@@ -1,0 +1,107 @@
+/* Style inputs, select elements and textareas */
+input,select,textarea{
+    width: 95%;
+    box-sizing: border-box;
+    resize: vertical;
+  
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+  }
+  
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+  .col-50 {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .col-30{
+    width: 30%;
+    margin-top: 20px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .header{
+    margin-bottom: 10px;
+  }
+  .title{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  mat-card{
+    margin-bottom: 10px;
+  }
+  mat-card label{
+  
+      font-size: 14px;
+      font-weight: 500;
+      color: #2e2e2e;
+  }
+ .row{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  .mt-20{
+    margin-top: 20px;
+  }
+
+  .ml-20{
+    margin-left: 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .width-10{
+    width: 10%;
+  }
+  .width-15{
+    width: 15%;
+  }
+.mat-mini-fab{
+  margin-right: 5px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.action-btns .mat-icon{
+  font-size:14px !important;
+}
+
+.action-btns .mat-mini-fab{
+  height: 30px;
+  width: 30px;
+}
+

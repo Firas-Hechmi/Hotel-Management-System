@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 15%;
+  }
+  
+.mat-mini-fab{
+  margin-right: 5px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.action-btns .mat-icon{
+  font-size:14px !important;
+}
+
+.action-btns .mat-mini-fab{
+  height: 30px;
+  width: 30px;
+}
+

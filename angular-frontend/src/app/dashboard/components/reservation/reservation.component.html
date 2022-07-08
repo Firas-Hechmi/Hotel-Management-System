@@ -1,0 +1,84 @@
+<mat-card class="roomInfo">
+  <div class="header">
+    <span class="title" >Room Information</span>
+    <button mat-raised-button style="float: right;" color="primary">Replan Room</button>
+  </div>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <form >
+      <div class="row">
+        <div class="col-50 left" >
+          <label >Room Type</label>
+          <select >
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+        <div class="col-50 right">
+          <label >Room No</label>
+          <select >
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50 left">
+          <label>Check In Date</label>
+          <input type="date" >
+        </div>
+        <div class="col-50 right">
+          <label>Check Out Date</label>
+          <input type="date">
+        </div>
+      </div>
+    </form>
+    
+  </mat-card-content>
+</mat-card>
+<mat-card class="customerInfo">
+  <div class="header">
+    <span class="title">Customer Details</span>
+  </div>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <form >
+      <div class="row">
+        <div class="col-30" >
+          <label >First Name</label>
+          <input type="text"/>
+        </div>
+        <div class="col-30">
+          <label>Last Name</label>
+          <input type="text"/>
+        </div>
+        <div class="col-30">
+          <label>Birth</label>
+          <input type="date"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-30" >
+          <label >Email</label>
+          <input type="email"/>
+        </div>
+        <div class="col-30">
+          <label>Contact No</label>
+          <input type="text"/>
+        </div>
+        <div class="col-30">
+          <label>Adress</label>
+          <input type="text"/>
+        </div>
+      </div>
+    
+     
+      
+    </form>
+  </mat-card-content>
+</mat-card>
+<div class="text-center mt-20">
+  <button mat-raised-button color="accent" class="float-right mr-20" (click)="submitReservation()" >Submit</button>
+</div>
